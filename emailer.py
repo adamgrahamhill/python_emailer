@@ -2,7 +2,7 @@ import dotenv
 import os
 dotenv.load_dotenv(dotenv.find_dotenv())
 import requests
-
+import smtplib
 
 def get_emails():
     emails = {}
