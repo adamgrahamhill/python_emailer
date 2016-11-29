@@ -1,8 +1,4 @@
-import dotenv
-dotenv.load_dotenv(dotenv.find_dotenv())
-import weather
-import mailer
-
+#file_reader.py
 def get_emails():
     emails = {}
     
@@ -26,17 +22,3 @@ def get_schedule():
         print(err)
     
     return schedule
-
-
-
-def main():
-    emails = get_emails()
-
-    schedule = get_schedule()
-
-    forecast = weather.get_weather_forecast()
-
-    mailer.send_emails(emails, schedule, forecast)
-
-main()
-
