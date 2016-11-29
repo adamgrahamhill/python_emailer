@@ -13,7 +13,7 @@ def get_weather_forecast():
     temp_max = weather_json['list'][0]['main']['temp_max']
     temp_min = weather_json['list'][0]['main']['temp_min']
 
-    # Build message to be returned
+    # Build weather forecast message
     forecast = 'The Circus forecast for today is '
     forecast += desc + ' with a high of ' + str(temp_max) + ' degrees'
     forecast += ' and a low of ' + str(temp_min) + ' degrees' + '.'

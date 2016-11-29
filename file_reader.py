@@ -1,4 +1,6 @@
 #file_reader.py
+
+# Read email addresses and corresponding names from file. Use to create dictionary
 def get_emails():
     emails = {}
     
@@ -13,6 +15,7 @@ def get_emails():
 
     return emails
 
+# Read schedule from file
 def get_schedule():
     try:
         schedule_file = open('schedule.txt', 'r')
